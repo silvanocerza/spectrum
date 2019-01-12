@@ -1,0 +1,26 @@
+<header class="hero is-dark">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <a href="{{ .Site.BaseURL }}">
+        <h1 class="title is-size-1-desktop is-size-3-tablet is-size-5-mobile">
+          {{- .Site.Title -}}
+        </h1>
+      </a>
+      <p class="subtitle is-size-3-desktop is-size-5-tablet is-size-7-tablet">
+        {{- .Site.Params.subtitle -}}
+      </p>
+
+      {{ with .Site.Menus.main }}
+      <div class="columns is-mobile is-multiline is-centered">
+        {{ range . }}
+          <div class="column is-narrow has-text-centered">
+              <a href="{{ .URL }}">
+                  {{- .Name -}}
+              </a>
+          </div>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</header>
