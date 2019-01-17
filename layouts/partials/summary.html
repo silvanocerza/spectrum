@@ -1,0 +1,29 @@
+<div class="columns is-centered">
+  <div class="column is-three-fifths">
+    {{ with .Resources.GetMatch "featured-image" }}
+      <a href="{{ $.RelPermalink }}">
+        <figure class="image is-16by9">
+          <img src="{{ .Permalink }}" alt="{{ .Title }}"/>
+        </figure>
+      </a>
+    {{ end }}
+
+    <a href="{{ .RelPermalink }}">
+      <h2 class="title is-size-2-desktop is-size-3-tablet is-size-4-mobile">
+        {{- .Title -}}
+      </h2>
+    </a>
+
+    <p class="has-text-weight-light has-text-grey-light">
+      {{- .PublishDate.Format "Mon Jan 2 2006" -}}
+    </p>
+
+    <p class="is-size-5-desktop is-size-5-tablet is-size-6-mobile">
+      {{ .Summary }}
+    </p>
+
+    <p class="is-size-5-desktop is-size-6-tablet is-size-6-mobile">
+      <a class="" href="{{ .RelPermalink }}">Read more…</a>
+    </p>
+  </div>
+</div>

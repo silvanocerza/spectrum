@@ -31,8 +31,10 @@
       {{ partial "header.html" . }}
     {{ end }}
 
-    {{ block "main" . }}
-    {{ end }}
+    <section class="section">
+      {{ block "main" . }}
+      {{ end }}
+    </section>
 
     {{ block "footer" . }}
       {{ partial "footer.html" . }}
