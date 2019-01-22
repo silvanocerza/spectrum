@@ -32,8 +32,12 @@
     {{ end }}
 
     <section class="section">
-      {{ block "main" . }}
-      {{ end }}
+      <div class="columns is-centered">
+        <div class="column is-two-fifths">
+          {{ block "main" . }}
+          {{ end }}
+        </div>
+      </div>
     </section>
 
     {{ block "footer" . }}
