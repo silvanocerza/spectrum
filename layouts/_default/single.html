@@ -1,19 +1,19 @@
 {{ define "main" }}
-<article class="content">
+<article class="content is-medium">
   {{ with .Resources.GetMatch "featured-image" }}
     <figure class="image is-marginless">
       <img src="{{ .Permalink }}" alt="{{ .Title }}"/>
     </figure>
   {{ end }}
 
-  <h2 class="title is-size-2-desktop is-size-3-tablet is-size-4-mobile">
+  <h2 class="title">
     {{ .Title }}
   </h2>
   <p class="subtitle has-text-weight-light has-text-grey-light">
       {{- .PublishDate.Format "Mon Jan 2 2006" -}}
   </p>
 
-  <p class="is-size-5-desktop is-size-5-tablet is-size-6-mobile">
+  <p>
     {{ .Content }}
   </p>
 </article>
