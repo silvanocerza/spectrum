@@ -20,7 +20,7 @@
 
 <div class="tags">
   {{ range .Params.tags }}
-    <a href="{{ "tags" | absURL }}/{{ . | urlize }}" class="tag is-medium">{{ . }}</a>
+    <a href="{{ "tags" | absURL }}/{{ . | urlize }}" class="tag is-dark is-medium">{{ . }}</a>
   {{ end }}
 </div>
 {{ end }}
