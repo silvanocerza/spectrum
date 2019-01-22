@@ -1,7 +1,7 @@
 <div class="summary">
   {{ with .Resources.GetMatch "featured-image" }}
     <a href="{{ $.RelPermalink }}">
-      <figure class="image is-16by9">
+      <figure class="image">
         <img src="{{ .Permalink }}" alt="{{ .Title }}"/>
       </figure>
     </a>

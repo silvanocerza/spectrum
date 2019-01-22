@@ -1,5 +1,9 @@
+{{ $caption := .Get 1 }}
 {{ with $.Page.Resources.GetMatch (.Get 0) }}
-  <figure class="image is-marginless is-16by9">
+  <figure class="image is-marginless">
     <img src="{{ .Permalink }}" alt="{{ .Title }}"/>
+    {{ with $caption }}
+      <figcaption>{{ . }}</figcaption>
+    {{ end }}
   </figure>
 {{ end }}

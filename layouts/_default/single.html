@@ -1,7 +1,7 @@
 {{ define "main" }}
 <article class="content">
   {{ with .Resources.GetMatch "featured-image" }}
-    <figure class="image is-marginless is-16by9">
+    <figure class="image is-marginless">
       <img src="{{ .Permalink }}" alt="{{ .Title }}"/>
     </figure>
   {{ end }}
