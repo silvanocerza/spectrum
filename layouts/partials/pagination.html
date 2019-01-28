@@ -1,0 +1,58 @@
+{{ $p := .Paginator }}
+{{ if ge $p.TotalPages 2 }}
+<nav class="pagination is-centered" role="navigation" aria-label="pagination">
+<a
+    class="pagination-previous"
+    aria-label="Go to previous page"
+    {{ with $p.Prev}} href="{{ .URL }}" {{ end }}
+    {{ if not $p.HasPrev }} disabled {{ end }}
+>
+    Previous
+</a>
+
+<ul class="pagination-list">
+    {{ with $p.First }}
+    {{ if not (eq $p .) }}
+        <li><a href={{ .URL }} class="pagination-link" aria-label="Go to page {{ .PageNumber }}">{{ .PageNumber }}</a></li>
+
+        {{ if not (eq $p .Next) }}
+        <li><span class="pagination-ellipsis" aria-hidden="true">&hellip;</span></li>
+        {{ end }}
+    {{ end }}
+    {{ end }}
+
+    {{ with $p.Prev }}
+    {{ if not (eq . $p.First) }}
+        <li><a class="pagination-link" href="{{ .URL }}" aria-label="Go to page {{ .PageNumber }}">{{ .PageNumber }}</a></li>
+    {{ end }}
+    {{ end }}
+
+    <li><a class="pagination-link is-current" href="{{ .URL }}" aria-label="Current page is {{ $p.PageNumber }}">{{ $p.PageNumber }}</a></li>
+
+    {{ with $p.Next }}
+    {{ if not (eq . $p.Last) }}
+        <li><a class="pagination-link" href="{{ .URL }}"  aria-label="Go to page {{ .PageNumber }}">{{ .PageNumber }}</a></li>
+    {{ end }}
+    {{ end }}
+
+    {{ with $p.Last }}
+    {{ if not (eq $p .) }}
+        {{ if not (eq $p .Prev) }}
+        <li><span class="pagination-ellipsis" aria-hidden="true">&hellip;</span></li>
+        {{ end }}
+        <li><a href={{ .URL }} class="pagination-link"  aria-label="Go to page {{ .PageNumber }}">{{ .PageNumber }}</a></li>
+    {{ end }}
+    {{ end }}
+</ul>
+
+<a
+    class="pagination-next"
+    aria-label="Go to next page"
+    {{ with $p.Next}} href="{{ .URL }}" {{ end }}
+    {{ if not $p.HasNext }} disabled {{ end }}
+>
+    Next
+</a>
+
+</nav>
+{{ end }}

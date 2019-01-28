@@ -9,6 +9,8 @@
       {{ range .Paginator.Pages }}
         {{ partial "summary.html" . }}
       {{ end }}
+
+      {{ partial "pagination.html" . }}
     </section>
   </article>
 {{ end }}
