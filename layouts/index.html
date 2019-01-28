@@ -1,0 +1,10 @@
+{{ define "main" }}
+    {{- template "_internal/pagination.html" -}}
+    {{ $paginator := .Paginate (where .Pages "Type" "in" site.Params.mainSections) }}
+
+    {{ range $paginator.Pages }}
+    {{ partial "summary.html" . }}
+    {{ end }}
+
+    {{ partial "pagination.html" . }}
+{{ end }}
