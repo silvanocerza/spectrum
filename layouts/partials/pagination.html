@@ -10,6 +10,15 @@
     Previous
 </a>
 
+<a
+    class="pagination-next"
+    aria-label="Go to next page"
+    {{ with $p.Next}} href="{{ .URL }}" {{ end }}
+    {{ if not $p.HasNext }} disabled {{ end }}
+>
+    Next
+</a>
+
 <ul class="pagination-list">
     {{ with $p.First }}
     {{ if not (eq $p .) }}
@@ -44,15 +53,5 @@
     {{ end }}
     {{ end }}
 </ul>
-
-<a
-    class="pagination-next"
-    aria-label="Go to next page"
-    {{ with $p.Next}} href="{{ .URL }}" {{ end }}
-    {{ if not $p.HasNext }} disabled {{ end }}
->
-    Next
-</a>
-
 </nav>
 {{ end }}
