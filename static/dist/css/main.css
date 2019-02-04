@@ -6748,3 +6748,5 @@ label.panel-block {
 
 .summary {
   padding-bottom: 3rem; }
+  .summary .image {
+    padding-bottom: 1.3rem; }
