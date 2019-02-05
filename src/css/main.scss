@@ -1,8 +1,10 @@
 @charset "utf-8";
 
-// Primary
+// Colors
 $primary: hsl(285, 100%, 50%);
 $primary-invert: hsl(0, 0%, 96%);
+$success: hsl(150, 100%, 50%);
+$success-invert: hsl(0, 0%, 21%);
 
 // Body
 $body-background-color: hsl(0, 0%, 21%);
@@ -25,8 +27,8 @@ $link-hover: hsl(285, 100%, 70%);
 $link-visited: hsl(285, 100%, 70%);
 
 // Tags
-$tag-background-color: hsl(0, 0%, 86%);
-$tag-color: $text-invert;
+$tag-background-color: hsl(0, 0%, 10%);
+$tag-color: $text;
 
 // Pagination
 $pagination-color: $body-color;
