@@ -1,13 +1,13 @@
 <div class="summary">
+  <a
+    class="title is-size-2-desktop is-size-3-tablet is-size-4-mobile"
+    href="{{ .RelPermalink }}">
   {{ with .Resources.GetMatch "featured-image" }}
-    <a href="{{ $.RelPermalink }}">
-      <figure class="image">
-        <img src="{{ .Permalink }}" alt="{{ .Title }}"/>
-      </figure>
-    </a>
+    <figure class="image">
+      <img src="{{ .Permalink }}" alt="{{ .Title }}"/>
+    </figure>
   {{ end }}
 
-  <a class="title is-size-2-desktop is-size-3-tablet is-size-4-mobile" href="{{ .RelPermalink }}">
     {{- .Title -}}
   </a>
 
