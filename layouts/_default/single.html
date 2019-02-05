@@ -9,7 +9,7 @@
   <h2 class="title">
     {{ .Title }}
   </h2>
-  <p class="subtitle has-text-weight-light has-text-grey-light">
+  <p class="subtitle has-text-weight-light">
       {{- .PublishDate.Format "Mon Jan 2 2006" -}}
   </p>
 
@@ -20,7 +20,7 @@
 
 <div class="tags">
   {{ range .Params.tags }}
-    <a href="{{ "tags" | absURL }}/{{ . | urlize }}" class="tag is-dark is-medium">{{ . }}</a>
+    <a href="{{ "tags" | absURL }}/{{ . | urlize }}" class="tag is-medium">{{ . }}</a>
   {{ end }}
 </div>
 {{ end }}

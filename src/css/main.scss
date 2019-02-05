@@ -1,10 +1,58 @@
 @charset "utf-8";
+
+// Primary
+$primary: hsl(285, 100%, 50%);
+$primary-invert: hsl(0, 0%, 96%);
+
+// Body
+$body-background-color: hsl(0, 0%, 21%);
+$body-color: hsl(0, 0%, 96%);
+
+// Text
+$text: $body-color;
+$text-invert: hsl(0, 0%, 21%);
+$text-light: hsl(0, 0%, 96%);
+$text-strong: hsl(0, 0%, 100%);
+
+// Title
+$title-color: $body-color;
+$subtitle-color: hsl(0, 0%, 71%);
+
+// Link
+$link: hsl(150, 100%, 50%);
+$link-invert: hsl(0, 0%, 21%);
+$link-hover: hsl(285, 100%, 70%);
+$link-visited: hsl(285, 100%, 70%);
+
+// Tags
+$tag-background-color: hsl(0, 0%, 86%);
+$tag-color: $text-invert;
+
+// Pagination
+$pagination-color: $body-color;
+
+$pagination-hover-color: hsl(150, 100%, 50%);
+$pagination-hover-border-color: hsl(150, 100%, 50%);
+
+$pagination-focus-color: $body-color;
+$pagination-focus-border-color: hsl(150, 100%, 50%);
+
+$pagination-current-color: $link-invert;
+$pagination-current-background-color: hsl(285, 100%, 70%);
+$pagination-current-border-color: hsl(285, 100%, 70%);
+
+$pagination-ellipsis-color: $body-color;
+
+// Footer
+$footer-background-color: hsl(0, 0%, 10%);
+
 @import "~bulma/bulma";
 
+
 .summary {
-    padding-bottom: 3rem;
+    padding-bottom: $size-1;
 
     .image {
-        padding-bottom: 1.3rem;
+        padding-bottom: $size-5;
     }
 }
