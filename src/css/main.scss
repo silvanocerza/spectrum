@@ -1,9 +1,13 @@
 @charset "utf-8";
 
 // Colors
-$primary: hsl(285, 100%, 50%);
+$purple: hsl(252, 91%, 70%);
+$green: hsl(156, 85%, 48%);
+
+// Palette
+$primary: $purple;
 $primary-invert: hsl(0, 0%, 96%);
-$success: hsl(150, 100%, 50%);
+$success: $green;
 $success-invert: hsl(0, 0%, 21%);
 
 // Body
@@ -21,10 +25,10 @@ $title-color: $body-color;
 $subtitle-color: hsl(0, 0%, 71%);
 
 // Link
-$link: hsl(150, 100%, 50%);
+$link: $success;
 $link-invert: hsl(0, 0%, 21%);
-$link-hover: hsl(285, 100%, 70%);
-$link-visited: hsl(285, 100%, 70%);
+$link-hover: $primary;
+$link-visited: $primary;
 
 // Tags
 $tag-background-color: hsl(0, 0%, 10%);
@@ -33,15 +37,15 @@ $tag-color: $text;
 // Pagination
 $pagination-color: $body-color;
 
-$pagination-hover-color: hsl(150, 100%, 50%);
-$pagination-hover-border-color: hsl(150, 100%, 50%);
+$pagination-hover-color: $success;
+$pagination-hover-border-color: $success;
 
 $pagination-focus-color: $body-color;
-$pagination-focus-border-color: hsl(150, 100%, 50%);
+$pagination-focus-border-color: $success;
 
 $pagination-current-color: $link-invert;
-$pagination-current-background-color: hsl(285, 100%, 70%);
-$pagination-current-border-color: hsl(285, 100%, 70%);
+$pagination-current-background-color: $success;
+$pagination-current-border-color: $success;
 
 $pagination-ellipsis-color: $body-color;
 
