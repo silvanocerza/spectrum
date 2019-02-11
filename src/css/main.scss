@@ -75,10 +75,32 @@ $footer-background-color: hsl(0, 0%, 10%);
 @import "~bulma/sass/layout/_all.sass";
 
 
+::selection {
+    color: $body-background-color;
+    background: $success;
+}
+
+::-moz-selection {
+    color: $body-background-color;
+    background: $success;
+}
+
 .summary {
     padding-bottom: $size-1;
 
     .image {
         padding-bottom: $size-5;
     }
+
+}
+
+.date {
+    opacity: 0.2;
+    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
+}
+
+.date:active,
+.date:hover {
+    opacity: 1;
 }

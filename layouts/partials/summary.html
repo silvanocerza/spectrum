@@ -11,9 +11,10 @@
     {{- .Title -}}
   </a>
 
-  <p class="has-text-weight-light has-text-grey-light">
-    {{- .PublishDate.Format "Mon Jan 2 2006" -}}
-  </p>
+  <br>
+  <time class="date" datetime="{{ .PublishDate.Format "2006-01-02" }}">
+    {{ .PublishDate.Format "Mon Jan 2 2006" }}
+  </time>
 
   <p class="is-size-5-desktop is-size-5-tablet is-size-6-mobile">
     {{ .Summary }}

@@ -5002,7 +5002,24 @@ a.tag:hover {
   background-color: #1a1a1a;
   padding: 3rem 1.5rem 6rem; }
 
+::selection {
+  color: #363636;
+  background: #12e28f; }
+
+::-moz-selection {
+  color: #363636;
+  background: #12e28f; }
+
 .summary {
   padding-bottom: 3rem; }
   .summary .image {
     padding-bottom: 1.25rem; }
+
+.date {
+  opacity: 0.2;
+  transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.3s ease; }
+
+.date:active,
+.date:hover {
+  opacity: 1; }

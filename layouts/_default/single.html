@@ -6,12 +6,12 @@
     </figure>
   {{ end }}
 
-  <h2 class="title">
+  <h2 class="title is-marginless">
     {{ .Title }}
   </h2>
-  <p class="subtitle has-text-weight-light">
-      {{- .PublishDate.Format "Mon Jan 2 2006" -}}
-  </p>
+  <time class="date" datetime="{{ .PublishDate.Format "2006-01-02" }}">
+      {{ .PublishDate.Format "Mon Jan 2 2006" }}
+  </time>
 
   <p>
     {{ .Content }}
