@@ -96,11 +96,28 @@ $footer-background-color: hsl(0, 0%, 10%);
 
 .date {
     opacity: 0.2;
-    transition: opacity 0.3s ease;
-    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.2s ease;
+    -webkit-transition: opacity 0.2s ease;
 }
 
 .date:active,
 .date:hover {
     opacity: 1;
+}
+
+a {
+    color: $green;
+    transition: color 0.2s ease;
+    -webkit-transition: color 0.2s ease;
+}
+
+a:hover {
+    color: $purple;
+}
+
+.pagination-previous,
+.pagination-next,
+.pagination-link {
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
 }

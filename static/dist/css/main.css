@@ -5017,9 +5017,23 @@ a.tag:hover {
 
 .date {
   opacity: 0.2;
-  transition: opacity 0.3s ease;
-  -webkit-transition: opacity 0.3s ease; }
+  transition: opacity 0.2s ease;
+  -webkit-transition: opacity 0.2s ease; }
 
 .date:active,
 .date:hover {
   opacity: 1; }
+
+a {
+  color: #12e28f;
+  transition: color 0.2s ease;
+  -webkit-transition: color 0.2s ease; }
+
+a:hover {
+  color: #896df8; }
+
+.pagination-previous,
+.pagination-next,
+.pagination-link {
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease; }
