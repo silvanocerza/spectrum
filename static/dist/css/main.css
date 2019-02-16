@@ -5016,13 +5016,7 @@ a.tag:hover {
     padding-bottom: 1.25rem; }
 
 .date {
-  opacity: 0.2;
-  transition: opacity 0.2s ease;
-  -webkit-transition: opacity 0.2s ease; }
-
-.date:active,
-.date:hover {
-  opacity: 1; }
+  color: #dbdbdb; }
 
 a {
   color: #12e28f;

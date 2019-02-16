@@ -95,14 +95,7 @@ $footer-background-color: hsl(0, 0%, 10%);
 }
 
 .date {
-    opacity: 0.2;
-    transition: opacity 0.2s ease;
-    -webkit-transition: opacity 0.2s ease;
-}
-
-.date:active,
-.date:hover {
-    opacity: 1;
+    color: $grey-lighter;
 }
 
 a {
