@@ -23,4 +23,6 @@
     <a href="{{ "tags" | absURL }}/{{ . | urlize }}" class="tag is-medium">{{ . }}</a>
   {{ end }}
 </div>
+
+{{ template "_internal/disqus.html" . }}
 {{ end }}
