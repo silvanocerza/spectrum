@@ -1,0 +1,44 @@
+baseurl = "https://example.com/"
+title = "Hugo Themes"
+copyright = "Copyright © 0000–9999, Some name here ; all rights reserved."
+paginate = 3
+theme = "spectrum"
+themesDir = "../.."
+languageCode = "en"
+DefaultContentLanguage = "en"
+disableLanguages = ["fr"]
+enableRobotsTXT = "true"
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[params]
+  subtitle = "An example"
+
+[languages.en]
+  languageName = "English"
+  weight = 1
+  title = "Hugo Themes"
+
+[languages.fr]
+  languageName = "Français"
+  weight = 2
+  title = "Thèmes Hugo"
+
+[menu]
+  [[menu.main]]
+    name = "Blog"
+    url = "/post/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Source"
+    url = "https://github.com/silvanocerza/spectrum"
+    weight = 2
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
