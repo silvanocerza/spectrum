@@ -42,9 +42,9 @@ You can load the image like so:
 
     {{< image "some-image" "This is the really long caption about this image" >}}
 
-The result would be something like this:
-
-TODO: INSERT IMAGE HERE
+The first argument is the name of image specified in the front matter.
+The optional second argument is the caption that will be shown below the image.
+It's safe to use HTML in the image caption.
 
 Installation
 ============
@@ -54,14 +54,9 @@ From your site root:
     git submodule add git@github.com:silvanocerza/spectrum.git
     git submodule update --init --recursive
 
-Set the theme in your site config depending on your format:
+Set the theme in your site config:
 
-    // TOML
     theme = "spectrum"
-    // YAML
-    theme: spectrum
-    // JSON
-    "theme": "spectrum"
 
 And you're all set!
 
