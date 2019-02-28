@@ -1,0 +1,10 @@
+{{ $bulma := resources.Get "bulma/bulma.sass"}}
+{{ $customVars := resources.Get "css/bulma-variables.sass" }}
+{{ $spectrumStyle := resources.Get "css/spectrum.sass"}}
+
+{{ $scss := slice $customVars $bulma $spectrumStyle | resources.Concat "css/main.sass" }}
+
+{{ $options := (dict "outputStyle" "compressed" "includePaths" (slice "assets/bulma" "assets/bulma/sass" )) }}
+{{ $style := $scss | resources.ToCSS $options }}
+
+<link href="{{ $style.Permalink }}" rel="stylesheet"/>

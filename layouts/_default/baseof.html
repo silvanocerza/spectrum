@@ -16,10 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{ .Hugo.Generator }}
 
-    {{ $stylesheet := .Site.Data.webpack_assets.app }}
-    {{ with $stylesheet.css }}
-      <link  href="{{ relURL (printf "%s%s" "dist/" .)}}" rel="stylesheet">
-    {{ end }}
+    {{ partial "style.html" . }}
 
     {{ with .OutputFormats.Get "rss" -}}
       {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
