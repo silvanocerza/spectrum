@@ -3,7 +3,7 @@
   <figure class="image is-marginless">
     <img src="{{ .Permalink }}" alt="{{ .Title }}"/>
     {{ with $caption }}
-      <figcaption>{{ . }}</figcaption>
+      <figcaption>{{ . | safeHTML }}</figcaption>
     {{ end }}
   </figure>
 {{ end }}
