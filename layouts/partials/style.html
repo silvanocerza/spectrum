@@ -1,8 +1,8 @@
 {{ $bulma := resources.Get "bulma/bulma.sass"}}
 {{ $customVars := resources.Get "css/bulma-variables.sass" }}
-{{ $spectrumStyle := resources.Get "css/spectrum.sass"}}
+{{ $personalStyle := resources.Get "css/personal.sass"}}
 
-{{ $scss := slice $customVars $bulma $spectrumStyle | resources.Concat "css/main.sass" }}
+{{ $scss := slice $customVars $bulma $personalStyle | resources.Concat "css/main.sass" }}
 
 {{ $options := (dict "outputStyle" "compressed" "includePaths" (slice "assets/bulma" "assets/bulma/sass" )) }}
 {{ $style := $scss | resources.ToCSS $options }}
