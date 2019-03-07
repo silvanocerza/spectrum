@@ -12,6 +12,8 @@ Features
 * Fully customizable using Bulma variables
 * No Javascript (except for optional internal templates)
 
+You can find some examples of theme customization in the `images` folder.
+
 Configuration
 =============
 
