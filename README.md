@@ -55,7 +55,7 @@ Installation
 
 From your site root:
 
-    git submodule add git@github.com:silvanocerza/spectrum.git
+    git submodule add git@github.com:silvanocerza/spectrum.git themes/spectrum
     git submodule update --init --recursive
 
 Set the theme in your site config:
