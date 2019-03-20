@@ -1,7 +1,7 @@
 Spectrum
 ========
 
-![spectrum](./images/spectrum.png)
+![spectrum](https://raw.githubusercontent.com/silvanocerza/spectrum/master/images/spectrum.png)
 
 An highly customizable Hugo theme based on the CSS framework Bulma.
 
@@ -21,7 +21,7 @@ The theme colors can be customized completely, to do so you must create a custom
 
 Inside `bulma-variables.sass` you can change any of Bulma's initial or derived variables. [Here](https://bulma.io/documentation/customize/variables/) you can find a complete list.
 
-For an example of a `bulma-variables.sass` file see the [exampleSite](./exampleSite/assets/css/bulma-variables.sass).
+For an example of a `bulma-variables.sass` file see the [exampleSite](https://github.com/silvanocerza/spectrum/blob/master/exampleSite/assets/css/bulma-variables.sass).
 
 Also you can add a subtitle on your site with:
 
