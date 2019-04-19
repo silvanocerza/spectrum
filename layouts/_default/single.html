@@ -3,6 +3,9 @@
   {{ with .Resources.GetMatch "featured-image" }}
     <figure class="image is-marginless">
       <img src="{{ .Permalink }}" alt="{{ .Title }}"/>
+      {{ with .Params.caption }}
+        <figcaption>{{ . | safeHTML }}</figcaption>
+      {{ end }}
     </figure>
   {{ end }}
 
