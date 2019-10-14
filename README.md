@@ -1,7 +1,9 @@
 Spectrum
 ========
 
-![spectrum](https://raw.githubusercontent.com/silvanocerza/spectrum/master/images/spectrum.png)
+![theme screenshot](https://raw.githubusercontent.com/silvanocerza/spectrum/master/images/tn.png)
+For more screenshots see the [images](./images) folder.
+
 
 An highly customizable Hugo theme based on the CSS framework Bulma.
 
