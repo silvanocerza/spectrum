@@ -1,23 +1,21 @@
-Spectrum
-========
+# Project is not maintained anymore
+
+# Spectrum
 
 ![theme screenshot](https://raw.githubusercontent.com/silvanocerza/spectrum/master/images/tn.png)
 For more screenshots see the [images](./images) folder.
 
-
 An highly customizable Hugo theme based on the CSS framework Bulma.
 
-Features
-========
+# Features
 
-* Responsive layout, supports any screen size
-* Fully customizable using Bulma variables
-* No Javascript (except for optional internal templates)
+- Responsive layout, supports any screen size
+- Fully customizable using Bulma variables
+- No Javascript (except for optional internal templates)
 
 You can find some examples of theme customization in the `images` folder.
 
-Configuration
-=============
+# Configuration
 
 The theme colors can be customized completely, to do so you must create a custom file named `bulma-variables.sass` in your site `assets/css` folder, the name must be exact.
 
@@ -30,9 +28,7 @@ Also you can add a subtitle on your site with:
     [params]
       subtitle = "This is the subtitle"
 
-
-Custom shortcodes
-=================
+# Custom shortcodes
 
 ## image
 
@@ -52,8 +48,7 @@ The first argument is the name of image specified in the front matter.
 The optional second argument is the caption that will be shown below the image.
 It's safe to use HTML in the image caption.
 
-Installation
-============
+# Installation
 
 From your site root:
 
@@ -66,14 +61,12 @@ Set the theme in your site config:
 
 And you're all set!
 
-Update
-======
+# Update
 
 To update the theme from your site root:
 
     git submodule update --recursive
 
-License
-=======
+# License
 
 This theme is licensed under the [BSD 3-Clause License](https://github.com/silvanocerza/spectrum/blob/master/LICENSE).
